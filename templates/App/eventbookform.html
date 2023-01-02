@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>EventBook-Form</title>
+        <style>
+        #div1{
+            margin: auto;
+            margin-top: 50px;
+            background-color:#42d1ea;
+            height:40px;
+            {#width:25%;#}
+            {#border-radius: 15px;#}
+        }
+        body{
+            background-color: azure;
+            text-align: center;
+        }
+    </style>
+
+    </head>
+    <body>
+    <!--<h1>EventBook Form</h1>
+    <hr/>-->
+    <div align="center">
+
+
+        {%if sentdata%}
+{#            <div target="new">#}
+                <h2 id="div1">THANK YOU FOR YOUR BOOKING</h2><br>
+               <a href="/homepage/">CLICK HERE TO GO HOME</a>
+                <span><h3>OR</h3></span>
+                <h2>Enter next booking Details</h2>
+{#            </div>#}
+        {%else%}
+            <h1 id="div1">EventBooking Submit Form</h1>
+        {%endif%}
+        <hr />
+        <form method="post">
+            {{form1.as_p}}
+            {%csrf_token%}
+{#            <input type="submit" name=""value="Submit">#}
+            <input class="button" type="submit" value="book event" ><br><br>
+            <p>Don't have an account? Create one <a href="/signup/">here</a></p><br>
+            <a href="/homepage/">CLICK HERE TO GO HOME</a>
+{#            <a href="/signup/" >click here to login</a>#}
+
+        </form>
+    </div>
+</body>
+</html>

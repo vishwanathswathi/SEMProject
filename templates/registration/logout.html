@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            margin: auto;
+            margin-top: 50px;
+            background-color: #42d1ea;
+            height:400px;
+            width:25%;
+            border-radius: 15px;
+        }
+        .button{
+            width:200px;
+            height:40px;
+        }
+        body{
+            background-color: azure;
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+    <div class="jumbotron" >
+        <div id="div1" style="text-align: center">
+        <h1>Thanks for visiting MOMENTOUS.</h1><br/>
+        <h3>Login Back Again:</h3><br/><br/>
+        <a href="/accounts/login">Login</a><br/><br/>
+            <a href="/homepage/">HOMEPAGE</a>
+              <form id="logout-form" method="post" action="/accounts/logout/">
+                    <input type="hidden" name="" value="">
+                    <button type="submit">Log out</button>
+                  {% csrf_token %}
+                </form>
+
+{#                {% if user.is_authenticated %}#}
+{#                      Hi {{ user.username }}!#}
+{#                      <p><a href="{% url 'logout/' %}">Log Out</a></p>#}
+{#                    {% else %}#}
+{#                      <p>You are not logged in</p>#}
+{#                      <a href="{% url 'login' %}">Log In</a>#}
+{#                    {% endif %}#}
+        </div>
+    </div>
+
+</body>
+</html>

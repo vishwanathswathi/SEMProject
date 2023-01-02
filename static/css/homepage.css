@@ -1,0 +1,115 @@
+.indiv2{
+    /*border: 1px solid red;*/      /*divived box border colour*/
+    float:left;     /*sequrnce of images left to right*/
+    width:30%;      /*width of box*/
+    height:340px;      /*height  of box*/
+    margin:1px;      /*gap b/w boxes*/
+    margin-top: 10px; /*gap b/w box and top div/box*/
+    margin-left: 40px;
+}
+h1{
+    color: #ab1230;
+    text-align: center;
+    /*border: 2px dashed blue;*/
+    /*border-radius: 15px;*/
+    background-color:#42d1ea;
+    /*height: 100px;*/
+}
+#li2{
+    background-color: #42d1ea;
+    padding-top:20px;
+    padding-left:20px;
+    color:white;
+    text-align: left;
+    height: 70px;
+    width: 94%;
+    margin-left: 35px;
+}
+#li{
+    background-color: #42d1ea;
+    padding-top:6px;
+    color:white;
+    text-align: center;
+    height: 50px;
+    width: 95%;
+    margin-left: 35px;
+}
+.indiv{
+    /*border: 1px solid red; */    /*divived box border colour*/
+    float: left;     /*sequrnce of images left to right*/
+    width:30%;      /*width of box*/
+    height:380px;      /*height  of box*/
+    margin:3px;      /*gap b/w boxes*/
+    margin-left: 30px;   /*gap b/w box and top div/box*/
+    margin-right: 10px;
+    background-color:#42d1ea
+
+}
+#div1{
+    /*border: 2px solid black;*/
+    height: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /*position: absolute;*/
+}
+img{
+    border:1px dotted blue;
+    width:90%;
+    height:250px;
+    margin:3px;
+    margin-left:22px;
+    margin-bottom: 5px;
+
+}
+/*img:hover {
+    border: 4px Solid Blue;
+    width: 93%;
+    height: 255px;
+}*/
+h3{
+    text-align: center;
+    color: white;
+}
+.button{
+    width: 170px;
+    text-align: center;
+    margin-left:110px;
+    height: 35px;
+}
+#div2{
+    border: 2px solid black;
+    height: 300px;
+    margin: auto;
+    background-color: #42d1ea;
+}
+.nav-logo{
+    height: 40px;
+    width: 60px;
+}
+ ul,li{
+    float:left;
+}
+#logo{
+     height:180%;
+     width: 100%;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child{
+    width: calc(33% - 10px);
+    height:100px ;
+    background-color: #42d1ea;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+@media (min-width: 640px)
+{
+    .child
+    {
+            min-width:calc(20% - 10px);
+    }
+}

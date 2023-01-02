@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            margin: auto;
+            margin-top: 50px;
+            background-color: #42d1ea;
+            height:400px;
+            width:25%;
+            border-radius: 15px;
+        }
+        .button{
+            width:200px;
+            height:40px;
+        }
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" align='center'><br>
+        <h3>Login to BookEvent!!</h3><br>
+        <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <br>
+            <br>
+            <br>
+            <button class="button" type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
